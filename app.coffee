@@ -9,12 +9,5 @@ module.exports =
 
   extensions: [
     js_pipeline(files: 'assets/js/*.js'),
-    css_pipeline(files: 'assets/css/*.styl')
+    css_pipeline(files: 'assets/css/main.css')
   ]
-
-  stylus:
-    use: [axis(), rupture(), autoprefixer()]
-    sourcemap: true
-
-  jade:
-    pretty: true
