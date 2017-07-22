@@ -1,0 +1,39 @@
+<!-- Based off on Aerial by HTML5 UP -->
+<!DOCTYPE HTML>
+<html ng-app="inj">
+	<head>
+		<title>A(vidor)(Inj)</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="loading" ng-controller="injctl as inj">
+		<div id="wrapper">
+			<div id="bg"></div>
+			<div id="overlay"></div>
+			<div id="main">
+				<header id="header">
+					<h1>Avidor</h1>
+					<p>
+						<list ng-repeat="title in inj.titles">
+							{{title}}{{$last ? '' : ' &nbsp;&bull;&nbsp; '}}
+						</list>
+					</p>
+					<nav>
+						<ul>
+							<li><a href="{{inj.linkedin}}" class="icon fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+							<li><a href="{{inj.github}}" class="icon fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+							<li><a href="{{inj.email}}" class="icon fa-envelope-o" target="_blank"><span class="label">Email</span></a></li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+		</div>
+		<!--[if lte IE 8]><script src="/js/ie/respond.min.js"></script><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="/js/main.js"></script>
+	</body>
+</html>
