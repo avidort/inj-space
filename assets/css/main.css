@@ -180,10 +180,8 @@
 		-moz-transform: translate3d(0,0,0);
 		-webkit-transform: translate3d(0,0,0);
 		-ms-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
-	/* Set your background with this */
-
-		background: #348cb2 url("images/bg.jpg") center left;
+    transform: translate3d(0,0,0);
+    
 		background-repeat: repeat;
 		background-size: cover;
 		height: 100%;

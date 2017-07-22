@@ -1,16 +1,24 @@
 {
-  "name": "inj",
-  "description": "",
+  "name": "inj.space website",
+  "homepage": "https://inj.space",
+  "author": "avidort <avidor98@gmail.com>",
   "dependencies": {
     "autoprefixer-stylus": "0.9.x",
     "axis": "0.6.x",
     "coffee-script": "1.x",
     "css-pipeline": "0.3.x",
+    "http-server": "^0.10.0",
     "jade": "1.x",
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
     "marked": "0.3.x",
     "rupture": "0.6.x",
     "stylus": "0.54.x"
+  },
+  "scripts": {
+    "dev": "roots watch",
+    "start": "node node_modules/http-server/bin/http-server public -p 1337",
+    "build": "roots compile -e production",
+    "deploy": "npm run build && npm start"
   }
 }
