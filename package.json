@@ -19,7 +19,7 @@
   "scripts": {
     "dev": "roots watch",
     "start": "node node_modules/http-server/bin/http-server public -p 1337",
-    "build": "roots compile -e production",
-    "deploy": "npm install && npm run build && npm start"
+    "build": "npm install && roots compile -e production",
+    "deploy": "npm run build && npm start"
   }
 }
