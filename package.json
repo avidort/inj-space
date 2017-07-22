@@ -1,5 +1,6 @@
 {
   "name": "inj-space",
+  "description": "Lightweight static profile landing page for https://inj.space",
   "homepage": "https://inj.space",
   "author": "avidort <avidor98@gmail.com>",
   "dependencies": {
